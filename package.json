@@ -1,6 +1,6 @@
 {
   "name": "@goloto/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mikhail Goloto's ESLint shareable config",
   "main": "index.js",
   "type": "module",

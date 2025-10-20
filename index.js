@@ -6,12 +6,12 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import unusedImports from 'eslint-plugin-unused-imports';
 import importPlugin from 'eslint-plugin-import';
 
-export { COMMON_RULES } from './configs/common.js';
-export { IMPORT_RULES } from './configs/import.js';
-export { REACT_RULES } from './configs/react.js';
-export { ACCESSABILITY_JSX_RULES } from './configs/jsx-a11y.js';
-export { TYPESCRIPT_RULES } from './configs/typescript.js';
-export { STYLISTIC_RULES } from './configs/stylistic.js';
+import { COMMON_RULES } from './configs/common.js';
+import { IMPORT_RULES } from './configs/import.js';
+import { REACT_RULES } from './configs/react.js';
+import { ACCESSABILITY_JSX_RULES } from './configs/jsx-a11y.js';
+import { TYPESCRIPT_RULES } from './configs/typescript.js';
+import { STYLISTIC_RULES } from './configs/stylistic.js';
 
 export default [{
   extends: [
