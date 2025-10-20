@@ -1,10 +1,10 @@
 import jsEslint from '@eslint/js';
 import tsEslint from 'typescript-eslint';
-import globals from 'globals';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import unusedImports from 'eslint-plugin-unused-imports';
 import importPlugin from 'eslint-plugin-import';
+import stylistic from '@stylistic/eslint-plugin';
 
 import { COMMON_RULES } from './configs/common.js';
 import { IMPORT_RULES } from './configs/import.js';
@@ -13,7 +13,7 @@ import { ACCESSABILITY_JSX_RULES } from './configs/jsx-a11y.js';
 import { TYPESCRIPT_RULES } from './configs/typescript.js';
 import { STYLISTIC_RULES } from './configs/stylistic.js';
 
-export default [{
+export default {
   extends: [
     jsEslint.configs.recommended, 
     tsEslint.configs.strict,
@@ -21,15 +21,12 @@ export default [{
     react.configs.flat.recommended,
     react.configs.flat['jsx-runtime'],
   ],
-  languageOptions: {
-    ecmaVersion: 2020,
-    globals: globals.browser,
-  },
   plugins: {
     'react': react,
     'react-hooks': reactHooks,
     'unused-imports': unusedImports,
     'import': importPlugin,
+    '@stylistic': stylistic
   },
   rules: {
     ...reactHooks.configs.recommended.rules,
@@ -40,4 +37,4 @@ export default [{
     ...TYPESCRIPT_RULES,
     ...STYLISTIC_RULES,
   },
-}];
+};
