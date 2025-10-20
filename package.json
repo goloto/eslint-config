@@ -1,8 +1,9 @@
 {
-  "name": "eslint-config",
-  "version": "1.0.0",
+  "name": "@goloto/eslint-config",
+  "version": "1.0.1",
   "description": "Mikhail Goloto's ESLint shareable config",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

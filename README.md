@@ -1,4 +1,4 @@
-# @goloto/eslint-config [![npm badge](https://img.shields.io/npm/v/@goloto/eslint-config)](https://www.npmjs.com/package/@goloto/eslint-config)
+# eslint-config [![npm badge](https://img.shields.io/npm/v/@goloto/eslint-config)](https://www.npmjs.com/package/@goloto/eslint-config)
 
 For my personal projects.
 
