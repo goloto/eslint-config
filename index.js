@@ -1,5 +1,3 @@
-import jsEslint from '@eslint/js';
-import tsEslint from 'typescript-eslint';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import unusedImports from 'eslint-plugin-unused-imports';
@@ -13,14 +11,7 @@ import { ACCESSABILITY_JSX_RULES } from './configs/jsx-a11y.js';
 import { TYPESCRIPT_RULES } from './configs/typescript.js';
 import { STYLISTIC_RULES } from './configs/stylistic.js';
 
-export default {
-  extends: [
-    jsEslint.configs.recommended, 
-    tsEslint.configs.strict,
-    tsEslint.configs.stylistic,
-    react.configs.flat.recommended,
-    react.configs.flat['jsx-runtime'],
-  ],
+export default [{
   plugins: {
     'react': react,
     'react-hooks': reactHooks,
@@ -37,4 +28,4 @@ export default {
     ...TYPESCRIPT_RULES,
     ...STYLISTIC_RULES,
   },
-};
+}];
